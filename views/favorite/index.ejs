@@ -1,0 +1,16 @@
+<% favorite.forEach(function(favorite) { %>
+  <div class="well">
+    <h2><%= favorite.title %>
+      <small><%= favorite.year %></small>
+    </h2>
+    <a href="/movies/<%= favorite.imdbId %>" class="btn btn-primary">Show More Details</a>
+    <%= favorite.imdbId %>
+
+    <a href="/favorite/<%= favorite.imdbId %>/tags" class="btn btn-success pull left">Add tags</a>
+
+    <a href="/favorite/<%= favorite.id %>/post" class="btn btn-danger pull-right delete-btn">Remove</a>
+
+    <a href="/comment/" class="btn btn-success pull right">Comment</a>
+
+  </div>
+<% }); %>

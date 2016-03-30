@@ -1,0 +1,17 @@
+<div class="container">
+	<div class="row" style="text-align: center">
+		<h1>Movies</h1><br />
+		<h2>Matching Keyword "<%=searchTerm %>"</h2>
+	</div>
+	<br><br>
+
+
+	<div class="well">
+		<% myData.forEach(function(item){ %>
+		<% var ID = item.imdbID; %>
+	<a href=<%= ID %> ><h2><%= item.Title %></h2></a>
+
+<% }) %>
+
+</div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row">
+		<h1>Comments</h1>
+</div>
+
+<% comments.forEach(function(comment) {%>
+<div class="well">
+	<p><%= comment.text %></p>
+
+
+<form action="comment" method="POST" role="form">
+	<legend>Create a new comment</legend>
+
+	<div class="form-group">
+		<label for="">Author</label>
+		<input type="text" class="form-control" id="" name="text">
+	</div>
+
+
+
+	
+
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+	</div>
+</div>

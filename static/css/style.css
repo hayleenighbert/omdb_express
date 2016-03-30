@@ -1,0 +1,46 @@
+body {
+	background-color: #c1e3dd;
+	font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #1a7867;
+}
+
+h3 {
+	font-family: 'Oxygen', sans-serif;
+	color: grey;
+	font-style: italic;
+}
+
+a {
+	font-family: 'Oxygen', sans-serif;
+	color: grey;
+}
+
+.row {
+	vertical-align: top;
+	
+}
+
+.well {
+	background-color: 
+}
+
+.btn {
+    border-radius: solid white 5px;
+    padding-left: 10px;
+}
+
+.container {
+	background-color: #c1e3dd;
+	font-family: 'Oxygen', sans-serif;
+	padding: 10px;
+}
+
+.div {
+	background-color: #c1e3dd;
+	font-family: 'Oxygen', sans-serif;
+	padding: 5px;
+}

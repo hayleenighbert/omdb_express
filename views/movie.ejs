@@ -1,0 +1,26 @@
+<div class="wrapper">
+
+	<div class="row" style="text-align: center">
+		<h1><%- info.Title %></h1>
+	</div><p>
+	<div class="row" style="text-align: center">
+		<p><img src="<%- info.Poster %>" align="center">
+	<div class="row">
+		<p><h2><%- info.Year %>, Directed by <%- info.Director%></h2></p>
+	</div>
+		<div class="well" style="text-align: center">
+	<p><h3><%- info.Plot %><h3></p>
+	</div>
+
+	<div class="row" style="text-align: center">
+		<form method="POST" action="/favorite">
+			<input class="imdbId" type="hidden" value="<%-info.imdbID%>" name="imdbId">
+			<input class="year" type="hidden" value="<%- info.Year%>" name="year">
+			<input class="title" type="hidden" value="<%- info.Title%>" name="title">
+			<input class="btn btn-info" type="submit" value="Add to Favorites" >
+		</form>
+	<p><button type="back" class="btn btn-info" href="/" value="back">Back</button>
+
+</div>
+</p>
+</div>
