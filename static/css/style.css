@@ -19,6 +19,10 @@ a {
 	color: grey;
 }
 
+.wrapper {
+	width: 50%;
+}
+
 .row {
 	vertical-align: top;
 	

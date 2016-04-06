@@ -27,10 +27,6 @@ router.get('/', function(req, res) {
 });
 
 
-router.get('/:id/tags', function(req, res) {
-	res.render('favorite/tags', {id:req.params.id});
-});
-
 router.post('/:imdbId/tags', function(req, res) {
 	var id = req.params.imdbId;
 	console.log('*********ID', id)
@@ -50,16 +46,16 @@ router.post('/:imdbId/tags', function(req, res) {
 	});
 });
 
-// router.get('/:id/post', function(req, res) {
-// 	var id = req.params.id;
-// 	db.favorite.findbyId(id).then(function(favorites) {
-// 		favorite.getComments().then(function(comments) {
-// 		res.render('favorites/post', {comments:post});
+router.get('/:id/post', function(req, res) {
+	var id = req.params.id;
+	db.favorite.findbyId(id).then(function(favorites) {
+		favorite.getComments().then(function(comments) {
+		res.render('favorites/post', {comments:post});
 
-// 	});
-// });
+	});
+});
 
-// });
+});
 
 // router.delete('/:imdbID', function(req, res) {
 //   db.favorite.destroy({
